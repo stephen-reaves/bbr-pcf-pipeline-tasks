@@ -5,7 +5,7 @@
 pushd sso-backup-artifact
   ../binary/bbr deployment --target "${BOSH_ADDRESS}" \
   --username "${BOSH_CLIENT}" \
-  --deployment "${ERT_DEPLOYMENT_NAME}" \
+  --deployment "Pivotal_Single_Sign-On_Service-3d1e97af31fba5915df8" \
   --ca-cert "${BOSH_CA_CERT_PATH}" \
   backup --with-manifest
 
